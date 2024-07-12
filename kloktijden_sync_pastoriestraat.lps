@@ -8,7 +8,7 @@
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="110"/>
+        <TopLine Value="187"/>
         <CursorPos X="34" Y="217"/>
         <UsageCount Value="130"/>
         <Loaded Value="True"/>
@@ -86,7 +86,7 @@
         <Mode Name="default">
           <local>
             <CommandLineParams Value="-command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/gnome-terminal -"/>
+            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/xfce4-terminal -"/>
             <WorkingDirectory Value="/home/chrgra/Documenten/kloktijden_pastoriestraat"/>
           </local>
         </Mode>
@@ -96,14 +96,15 @@
       <List Name="WorkingDirectory" Type="File" Count="1">
         <Item1 Value="/home/chrgra/Documenten/kloktijden_pastoriestraat"/>
       </List>
-      <List Name="LaunchingApplication" Type="File" Count="7">
-        <Item1 Value="/usr/bin/gnome-terminal -"/>
-        <Item2 Value="/usr/bin/gnome-terminal --command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-        <Item3 Value="/usr/bin/gnome-terminal -e /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-        <Item4 Value="/usr/bin/gnome-terminal /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-        <Item5 Value="/usr/bin/gnome-terminal ./kloktijden_sync_pastoriestraat"/>
-        <Item6 Value="/usr/bin/gnome-terminal"/>
-        <Item7 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+      <List Name="LaunchingApplication" Type="File" Count="8">
+        <Item1 Value="/usr/bin/xfce4-terminal -"/>
+        <Item2 Value="/usr/bin/gnome-terminal -"/>
+        <Item3 Value="/usr/bin/gnome-terminal --command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item4 Value="/usr/bin/gnome-terminal -e /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item5 Value="/usr/bin/gnome-terminal /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item6 Value="/usr/bin/gnome-terminal ./kloktijden_sync_pastoriestraat"/>
+        <Item7 Value="/usr/bin/gnome-terminal"/>
+        <Item8 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
       <List Name="CommandLineParameters" Count="1">
         <Item1 Value="-command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
