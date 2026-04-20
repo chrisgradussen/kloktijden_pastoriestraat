@@ -10,6 +10,7 @@ var
   inifile : tinifile;
   stamp : integer;
   writedir, gooddir, wrongdir : string;
+  port : word;
 
 procedure route1(aReq: TRequest; aResp: TResponse);
 begin
@@ -136,6 +137,7 @@ begin
      writeln('gooddir=<pathtogooddir>');
      writeln('wrongdir=<pathtowrongdir>');
      writeln('laststamp=<notset>');
+     writeln('port=<server port number> (default 8081)');
      writeln('----------------------');
      writeln('writedir need to be writeable.');
      writeln('laststamp is 0 or higher.');
@@ -153,6 +155,7 @@ begin
         rewrite(txt);
         closefile(txt);
         deletefile(tempfile);
+        writeln('PARAMDIR writedir = ' + writedir);
       except
         on E : EInOutError do begin writeln('writedir must exist and  be writable');  exit; end
         else raise
@@ -164,6 +167,7 @@ begin
         rewrite(txt);
         closefile(txt);
         deletefile(tempfile);
+        writeln('PARAM gooddir = ' + gooddir);
       except
         on E : EInOutError do begin writeln('gooddir must exist and  be writable');  exit; end
         else raise
@@ -175,6 +179,7 @@ begin
         rewrite(txt);
         closefile(txt);
         deletefile(tempfile);
+        writeln('PARAM wrongdir = ' + wrongdir);
       except
         on E : EInOutError do begin writeln('wrongdir must exist and  be writable');  exit; end
         else raise
@@ -186,8 +191,13 @@ begin
           writeln('wrong value for stamp or no stamp with value -1, Found value : ' + inifile.ReadString('MAIN','stamp','-1'));
           exit;
         end;
-        writeln('PARAM WRITEDIR = ' + writedir);
         writeln('PARAM STAMP = ' +inttostr(stamp));
+        result := true;
+     finally
+     end;
+     try
+        port := inifile.ReadInteger('MAIN','PORT',8081);
+        writeln('PARAM PORT = ' + inttostr(port));
         result := true;
      finally
      end;
@@ -213,7 +223,7 @@ begin
   HTTPRouter.registerRoute('/iclock/getrequest',@Lees_status);
 
   Application.Title:='iclock sync';
-  Application.Port:=8081;
+  Application.Port:=port;
   writeln(datetimetostr(now) +' server started');
   Application.Initialize;
   Application.Run;

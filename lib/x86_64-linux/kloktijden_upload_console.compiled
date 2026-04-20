@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -gw3 -gl -l -vewnhibq -Fi/home/chrgra/Documenten/kloktijden_pastoriestraat/lib/x86_64-linux -Fu/home/chrgra/Documenten/kloktijden_pastoriestraat/ -FU/home/chrgra/Documenten/kloktijden_pastoriestraat/lib/x86_64-linux/ -FE/home/chrgra/Documenten/kloktijden_pastoriestraat/ -o/home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_upload_console kloktijden_upload_console.lpr"/>
+</CONFIG>

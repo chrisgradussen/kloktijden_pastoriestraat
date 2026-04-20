@@ -8,13 +8,19 @@
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="110"/>
-        <CursorPos X="34" Y="217"/>
-        <UsageCount Value="130"/>
+        <CursorPos X="31"/>
+        <UsageCount Value="133"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="leesparameters.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="10"/>
+        <UsageCount Value="20"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="15">
+    <JumpHistory HistoryIndex="20">
       <Position>
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <Caret Line="47" Column="22" TopLine="19"/>
@@ -78,6 +84,26 @@
       <Position>
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <Caret Line="114" Column="33" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="208" Column="21" TopLine="191"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="13" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="218" Column="39" TopLine="201"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="110" Column="11" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="7" Column="77"/>
       </Position>
     </JumpHistory>
     <RunParams>
