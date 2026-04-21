@@ -4,13 +4,12 @@ program kloktijden_sync_pastoriestraat;
 {$mode objfpc}{$H+}
 
 uses
-  cthreads,fphttpapp, httpdefs, httproute, sysutils,inifiles, leesparameters;
+  cthreads,fphttpapp, httpdefs, httproute, sysutils,inifiles,sharedcode;
 
 var
   inifile : tinifile;
-  stamp : integer;
-  writedir, gooddir, wrongdir : string;
-  port : word;
+
+
 
 procedure route1(aReq: TRequest; aResp: TResponse);
 begin
@@ -116,6 +115,7 @@ begin
   serial := leftstr(areq.QueryString,16);
   writeln(datetimetostr(now) +' status : serial number is : '+serial);
 end;
+
 
 begin
   try

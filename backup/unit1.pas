@@ -107,7 +107,7 @@ begin
       readln(txt,s);
       memo1.Append('Pastoriestraat ' + inttostr(pos(':TRANSACTIONS: SN=0741133800020    IP=172.16.2.4	TIME',s)));
       memo1.Append('eilandplein ' + inttostr(pos(':TRANSACTIONS: SN=0741133800083	IP=172.16.1.4	TIME',s)));
-{pastoriestraat}     if pos(':TRANSACTIONS: SN=0741133800020    IP=172.16.2.4	TIME',s) = 0 then
+{pastoriestraat}     if pos(':TRANSACTIONS: SN=0741133800020    IP=172.16.2.4	TIME',s) <> 0 then
 {eilandplein}    //  if pos(':TRANSACTIONS: SN=0741133800083	IP=172.16.1.4	TIME',s) <> 0 then
         raise Exception.Create('geen transactbestand ' + OpenDialog.filename);
       while not eof(txt) do

@@ -8,8 +8,9 @@
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="31"/>
-        <UsageCount Value="133"/>
+        <TopLine Value="96"/>
+        <CursorPos X="14" Y="138"/>
+        <UsageCount Value="134"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -17,26 +18,19 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="18" Y="10"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sharedcode.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
+        <CursorPos Y="15"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="20">
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="47" Column="22" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="46" Column="46" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="59" Column="18" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="103" Column="37" TopLine="89"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <Caret Line="210" Column="49" TopLine="182"/>
@@ -105,34 +99,92 @@
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <Caret Line="7" Column="77"/>
       </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="13" Column="21"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="104" Column="20" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="119" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="7" Column="72"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="8" Column="29"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="12" Column="27"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="108" Column="18" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="14" Column="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="56" Column="8" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="15" Column="4" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="13" Column="19" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
+        <Caret Line="122" Column="36" TopLine="96"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode="default">
         <Mode Name="default">
           <local>
-            <CommandLineParams Value="-command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/gnome-terminal -"/>
-            <WorkingDirectory Value="/home/chrgra/Documenten/kloktijden_pastoriestraat"/>
+            <CommandLineParams Value="-command /home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/xfce4-terminal -"/>
+            <WorkingDirectory Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat"/>
           </local>
         </Mode>
       </Modes>
     </RunParams>
     <HistoryLists>
-      <List Name="WorkingDirectory" Type="File" Count="1">
-        <Item1 Value="/home/chrgra/Documenten/kloktijden_pastoriestraat"/>
+      <List Name="WorkingDirectory" Type="File" Count="3">
+        <Item1 Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat"/>
+        <Item2 Value="/home/chrgra/GitHub/Documenten/kloktijden_pastoriestraat"/>
+        <Item3 Value="/home/chrgra/Documenten/kloktijden_pastoriestraat"/>
       </List>
-      <List Name="LaunchingApplication" Type="File" Count="7">
-        <Item1 Value="/usr/bin/gnome-terminal -"/>
-        <Item2 Value="/usr/bin/gnome-terminal --command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-        <Item3 Value="/usr/bin/gnome-terminal -e /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-        <Item4 Value="/usr/bin/gnome-terminal /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
-        <Item5 Value="/usr/bin/gnome-terminal ./kloktijden_sync_pastoriestraat"/>
-        <Item6 Value="/usr/bin/gnome-terminal"/>
-        <Item7 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+      <List Name="LaunchingApplication" Type="File" Count="9">
+        <Item1 Value="/usr/bin/xfce4-terminal -"/>
+        <Item2 Value="/usr/bin/xfce4-terminal-"/>
+        <Item3 Value="/usr/bin/gnome-terminal -"/>
+        <Item4 Value="/usr/bin/gnome-terminal --command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item5 Value="/usr/bin/gnome-terminal -e /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item6 Value="/usr/bin/gnome-terminal /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item7 Value="/usr/bin/gnome-terminal ./kloktijden_sync_pastoriestraat"/>
+        <Item8 Value="/usr/bin/gnome-terminal"/>
+        <Item9 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
       </List>
-      <List Name="CommandLineParameters" Count="1">
-        <Item1 Value="-command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+      <List Name="CommandLineParameters" Count="3">
+        <Item1 Value="-command /home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item2 Value="-command /home/chrgra/GitHub/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
+        <Item3 Value="-command /home/chrgra/Documenten/kloktijden_pastoriestraat/kloktijden_sync_pastoriestraat"/>
       </List>
     </HistoryLists>
   </ProjectSession>

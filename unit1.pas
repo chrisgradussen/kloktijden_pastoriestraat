@@ -35,10 +35,12 @@ type
     Panel4: TPanel;
     procedure Button1Click(Sender: TObject);
     procedure Button_LaadbestandClick(Sender: TObject);
+    procedure EventLog1GetCustomCategory(Sender: TObject; var Code: Word);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure InDirectoryChange(Sender: TObject);
     procedure Label3Click(Sender: TObject);
+    procedure Memo1Change(Sender: TObject);
     procedure Timer1StartTimer(Sender: TObject);
     procedure Timer1StopTimer(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
@@ -230,6 +232,11 @@ begin
      verstuurbestand(OpenDialog.filename);
 end;
 
+procedure TForm1.EventLog1GetCustomCategory(Sender: TObject; var Code: Word);
+begin
+
+end;
+
 procedure TForm1.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   eventlog1.Debug('Program stopped');
@@ -249,6 +256,11 @@ begin
 end;
 
 procedure TForm1.Label3Click(Sender: TObject);
+begin
+
+end;
+
+procedure TForm1.Memo1Change(Sender: TObject);
 begin
 
 end;

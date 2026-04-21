@@ -1,85 +1,86 @@
 object Form1: TForm1
   Left = 545
-  Height = 550
+  Height = 802
   Top = 238
-  Width = 1096
+  Width = 1598
   Caption = 'Form1'
-  ClientHeight = 550
-  ClientWidth = 1096
+  ClientHeight = 802
+  ClientWidth = 1598
+  DesignTimePPI = 140
+  LCLVersion = '4.4.0.0'
   OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '2.2.6.0'
   object Panel1: TPanel
     Left = 0
-    Height = 42
+    Height = 61
     Top = 0
-    Width = 1096
+    Width = 1598
     Align = alTop
     Caption = 'Panel1'
-    ClientHeight = 42
-    ClientWidth = 1096
+    ClientHeight = 61
+    ClientWidth = 1598
     TabOrder = 0
     object Edit1: TEdit
-      Left = 216
-      Height = 28
+      Left = 315
+      Height = 35
       Top = 0
-      Width = 800
+      Width = 1167
       TabOrder = 0
       Text = 'https://jumbo3448.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=20230323&time=15:50:01&status=stop&personnel_number=272100003'
     end
     object Button1: TButton
       Left = 0
-      Height = 25
+      Height = 36
       Top = 0
-      Width = 75
+      Width = 109
       Caption = 'Zend'
-      OnClick = Button1Click
       TabOrder = 1
+      OnClick = Button1Click
     end
   end
   object Panel2: TPanel
     Left = 0
-    Height = 508
-    Top = 42
-    Width = 1096
+    Height = 741
+    Top = 61
+    Width = 1598
     Align = alClient
     Caption = 'Panel2'
-    ClientHeight = 508
-    ClientWidth = 1096
+    ClientHeight = 741
+    ClientWidth = 1598
     TabOrder = 1
     object Panel3: TPanel
       Left = 1
-      Height = 127
+      Height = 185
       Top = 1
-      Width = 1094
+      Width = 1596
       Align = alTop
       Caption = 'Panel3'
-      ClientHeight = 127
-      ClientWidth = 1094
+      ClientHeight = 185
+      ClientWidth = 1596
       TabOrder = 0
       object InDirectory: TDirectoryEdit
-        Left = 184
-        Height = 28
+        Left = 268
+        Height = 35
         Top = 0
-        Width = 415
+        Width = 605
         Directory = '/home/chrgra/Documenten/kloktijden_pastoriestraat/in'
         ShowHidden = False
-        ButtonWidth = 23
+        ButtonWidth = 34
         DirectInput = False
         NumGlyphs = 1
         MaxLength = 0
         TabOrder = 0
-        OnChange = InDirectoryChange
         Text = '/home/chrgra/Documenten/kloktijden_pastoriestraat/in'
+        OnChange = InDirectoryChange
       end
       object GoodDirectory: TDirectoryEdit
-        Left = 184
-        Height = 28
-        Top = 32
-        Width = 415
+        Left = 268
+        Height = 35
+        Top = 47
+        Width = 605
         Directory = '/home/chrgra/Documenten/kloktijden_pastoriestraat/good'
         ShowHidden = False
-        ButtonWidth = 23
+        ButtonWidth = 34
         DirectInput = False
         NumGlyphs = 1
         MaxLength = 0
@@ -87,13 +88,13 @@ object Form1: TForm1
         Text = '/home/chrgra/Documenten/kloktijden_pastoriestraat/good'
       end
       object WrongDirectory: TDirectoryEdit
-        Left = 184
-        Height = 28
-        Top = 64
-        Width = 415
+        Left = 268
+        Height = 35
+        Top = 93
+        Width = 605
         Directory = '/home/chrgra/Documenten/kloktijden_pastoriestraat/wrong'
         ShowHidden = False
-        ButtonWidth = 23
+        ButtonWidth = 34
         DirectInput = False
         NumGlyphs = 1
         MaxLength = 0
@@ -102,69 +103,70 @@ object Form1: TForm1
       end
       object Label1: TLabel
         Left = 0
-        Height = 16
-        Top = 12
-        Width = 80
+        Height = 23
+        Top = 18
+        Width = 113
         Caption = 'In Bestanden'
         ParentColor = False
       end
       object Label2: TLabel
         Left = 1
-        Height = 16
-        Top = 40
-        Width = 129
+        Height = 23
+        Top = 58
+        Width = 190
         Caption = 'Verwerkte Bestanden'
         ParentColor = False
       end
       object Label3: TLabel
         Left = 1
-        Height = 16
-        Top = 71
-        Width = 173
+        Height = 23
+        Top = 104
+        Width = 253
         Caption = 'Foutief verwerkte bestanden'
         ParentColor = False
         OnClick = Label3Click
       end
       object Button_Laadbestand: TButton
-        Left = 928
-        Height = 25
-        Top = 15
-        Width = 75
+        Left = 1353
+        Height = 36
+        Top = 22
+        Width = 109
         Caption = 'Laad bestand'
-        OnClick = Button_LaadbestandClick
         TabOrder = 3
+        OnClick = Button_LaadbestandClick
       end
       object ToggleBox1: TToggleBox
-        Left = 712
-        Height = 25
-        Top = 36
-        Width = 75
+        Left = 1038
+        Height = 36
+        Top = 52
+        Width = 109
         Caption = 'STOPPED'
         Color = clRed
-        OnChange = ToggleBox1Change
         TabOrder = 4
+        OnChange = ToggleBox1Change
       end
     end
     object Panel4: TPanel
       Left = 1
-      Height = 379
-      Top = 128
-      Width = 1094
+      Height = 554
+      Top = 186
+      Width = 1596
       Align = alClient
       Caption = 'Panel4'
-      ClientHeight = 379
-      ClientWidth = 1094
+      ClientHeight = 554
+      ClientWidth = 1596
       TabOrder = 1
       object Memo1: TMemo
         Left = 1
-        Height = 377
+        Height = 552
         Top = 1
-        Width = 1092
+        Width = 1594
         Align = alClient
         Lines.Strings = (
           'Memo1'
         )
         TabOrder = 0
+        OnChange = Memo1Change
       end
     end
   end
@@ -177,20 +179,21 @@ object Form1: TForm1
     DefaultEventType = etCustom
     CustomLogType = 0
     EventIDOffset = 0
+    OnGetCustomCategory = EventLog1GetCustomCategory
     Paused = False
-    Left = 987
-    Top = 400
+    Left = 1439
+    Top = 583
   end
   object OpenDialog: TOpenDialog
-    Left = 888
-    Top = 408
+    Left = 1295
+    Top = 595
   end
   object Timer1: TTimer
     Interval = 500
     OnTimer = Timer1Timer
     OnStartTimer = Timer1StartTimer
     OnStopTimer = Timer1StopTimer
-    Left = 802
-    Top = 393
+    Left = 1170
+    Top = 573
   end
 end
