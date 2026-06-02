@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}
   Classes, SysUtils, CustApp,crt
-  { you can add units after this },openssl, opensslsockets,StrUtils,inifiles,fphttpclient,fpjsonparser,fpjson,sharedcode;
+  { you can add units after this },openssl, opensslsockets,StrUtils,inifiles,fphttpclient,jsonparser,fpjson,sharedcode;
 
 type
 
@@ -93,7 +93,7 @@ end;
 procedure TMyUploadkloktijden.verstuurbestand(filename : string);
 var
 txt : textfile;
-s,e,url : string;
+s,e,url, vestigingsnummer: string;
 L:TStringlist;
 r : integer;
 personnel_number, date, time, status : string;
@@ -112,9 +112,22 @@ begin
    //   memo1.Append('eilandplein ' + inttostr(pos(':TRANSACTIONS: SN=0741133800083	IP=172.16.1.4	TIME',s)));
    {eilandplein}    //  if pos(':TRANSACTIONS: SN=0741133800083	IP=172.16.1.4	TIME',s) <> 0 then
 {pastoriestraat}     r :=pos(':TRANSACTIONS: SN=0741133800020',s);
-         if r = 0 then
-
-        raise Exception.Create('geen transactbestand ' + filename);
+      if r > 0  then
+      begin
+         vestigingsnummer := '3448';
+      end
+      else
+      begin
+         r :=pos(':TRANSACTIONS: SN=0741133800083',s);
+         if r > 0 then
+         begin
+            vestigingsnummer := '6418';
+         end
+         else
+         begin
+           raise Exception.Create('geen transactbestand ' + filename);
+         end
+      end;
       while not eof(txt) do
       begin
         readln(txt, s);
@@ -143,6 +156,10 @@ begin
               if comparestr(l.strings[3],'1') = 0 then status := 'stop'
               else
                 raise Exception.Create('status is not 0 or 1 (start or stop)');
+              if not (vestigingsnummer in ['3448', '6418']) then
+                raise Exception.Create('Vestigingsnummer niet in 3448 of 6418');
+          {3448 en 6418 }url := 'https://jumbo'+vestigingsnummer+'.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' + date +
+                      '&time=' + time + '&status=' + status + '&personnel_number='+ personnel_number;
 {pastoriestraat}url := 'https://jumbo3448.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' + date +
                       '&time=' + time + '&status=' + status + '&personnel_number='+ personnel_number;
 {eilandplein}
