@@ -27,7 +27,28 @@ type
 
   end;
 
+  procedure SafeCloseFile(var F: TextFile);
+var
+  R: Integer;
+  Name : string;
+begin
+  {$I-}
+  CloseFile(F);
+  R := IOResult;
+  {$I+}
+  Name := 'bestandsnaam';
+  case R of
+    0:   Writeln('CloseFile OK: ', Name);
+    5:   Writeln('CloseFile: bestand was al dicht: ', Name);      // EInOutError
+    else Writeln('CloseFile fout ', R, ' voor: ', Name);
+  end;
+end;
+
+
+
 { TMyUploadkloktijden }
+
+
 
 function TMyUploadkloktijden.readresult(s  : string) : boolean;
 var
@@ -183,6 +204,7 @@ begin
           l.free;
         end;
       end;
+      safeclosefile(txt);
       if renamefile(FileName,GoodDir+'/'+extractfilename(filename)) = false then
         raise Exception.Create('Kan file niet verplaatsen naar good ' + GoodDir+'/'+extractfilename(filename))
       else
@@ -191,6 +213,7 @@ begin
     except
       on E: Exception do
       begin
+        safeCloseFile(txt);
         writeln(E.Message);
         //eventlog1.error(E.Message);
         if renamefile(FileName,WrongDir+'/'+extractfilename(filename)) = false then
@@ -203,6 +226,7 @@ begin
       end;
       on E: EInOutError do
       begin
+       safeclosefile(txt);
        writeln(E.Message);
        //eventlog1.error(E.Message);
        if renamefile(FileName,WrongDir+'/'+extractfilename(filename)) = false then
@@ -215,7 +239,7 @@ begin
     end;
   finally
     try
-        closefile(txt);
+        safelosefile(txt);
     except
       on E: EInOutError do
       writeln(E.Message);
