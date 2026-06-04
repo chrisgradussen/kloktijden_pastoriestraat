@@ -184,7 +184,7 @@ begin
         end;
       end;
       if renamefile(FileName,GoodDir+'/'+extractfilename(filename)) = false then
-        raise Exception.Create('Kan file niet verplaatsen naar good ' + filename)
+        raise Exception.Create('Kan file niet verplaatsen naar good ' + GoodDir+'/'+extractfilename(filename))
       else
          writeln('Bestand verplaatst naar good');
          //eventlog1.Debug('Bestand verplaatst naar good');
@@ -197,7 +197,7 @@ begin
          writeln('Kan file niet verplaatsen naar wrong ' + filename)
         //eventlog1.Error('Kan file niet verplaatsen naar wrong ' + filename)
          else
-           writeln('Bestand verplaatst naar wrong' + filename);
+           writeln('Bestand verplaatst naar wrong' + WrongDir+'/'+extractfilename(filename);
          //eventlog1.Debug('Bestand verplaatst naar wrong'' + filename);
 
       end;
@@ -233,7 +233,8 @@ begin
   // quick check parameters
     writeln(datetimetostr(date));
     writeln(paramstr(0));
-    sleep(1000);
+    writeln(paramstr(1));
+    sleep(10000);
  // ErrorMsg:=CheckOptions('h', 'help');
   if not leesparameters(inifile) then begin
  // if ErrorMsg<>'' then begin

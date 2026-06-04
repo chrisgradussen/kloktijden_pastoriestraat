@@ -8,8 +8,8 @@
         <Filename Value="kloktijden_upload_console.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="235"/>
-        <CursorPos Y="263"/>
+        <TopLine Value="175"/>
+        <CursorPos X="93" Y="200"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
@@ -31,18 +31,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="102" TopLine="82"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="105" TopLine="82"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="133" TopLine="112"/>
-      </Position>
       <Position>
         <Filename Value="kloktijden_upload_console.lpr"/>
         <Caret Line="37" TopLine="26"/>
@@ -151,6 +139,18 @@
         <Filename Value="kloktijden_upload_console.lpr"/>
         <Caret Line="235" Column="30" TopLine="210"/>
       </Position>
+      <Position>
+        <Filename Value="kloktijden_upload_console.lpr"/>
+        <Caret Line="200" Column="101" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_upload_console.lpr"/>
+        <Caret Line="187" Column="73" TopLine="163"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_upload_console.lpr"/>
+        <Caret Line="200" Column="54" TopLine="175"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -168,7 +168,7 @@
       <List Name="WorkingDirectory" Type="File" Count="1">
         <Item1 Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat"/>
       </List>
-      <List Name="LaunchingApplication" Type="File" Count="15">
+      <List Name="LaunchingApplication" Type="File" Count="14">
         <Item1 Value="/usr/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console /home/chrgra/.../test.ini&quot;"/>
         <Item2 Value="usr/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console /home/chrgra/.../test.ini&quot;"/>
         <Item3 Value="/usr/bin/xfce4-terminal  --hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
@@ -176,14 +176,14 @@
 "/>
         <Item5 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
         <Item6 Value="/bin/xfce4-terminal --hold --command=&quot;%ExeName% %Params%&quot;"/>
-        <Item8 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console test.ini&quot;"/>
-        <Item9 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console&quot;"/>
-        <Item10 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console -test.ini&quot;"/>
-        <Item11 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console ./test.ini&quot;"/>
-        <Item12 Value="/bin/xfce4-terminal"/>
-        <Item13 Value="/bin/xfce4-terminal --hold"/>
-        <Item14 Value="xfce4-terminal"/>
-        <Item15 Value="--hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
+        <Item7 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console test.ini&quot;"/>
+        <Item8 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console&quot;"/>
+        <Item9 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console -test.ini&quot;"/>
+        <Item10 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console ./test.ini&quot;"/>
+        <Item11 Value="/bin/xfce4-terminal"/>
+        <Item12 Value="/bin/xfce4-terminal --hold"/>
+        <Item13 Value="xfce4-terminal"/>
+        <Item14 Value="--hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
       </List>
       <List Name="CommandLineParameters" Count="5">
         <Item1 Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat/test.ini"/>
