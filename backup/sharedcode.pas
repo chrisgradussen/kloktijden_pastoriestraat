@@ -12,6 +12,7 @@ var
    writedir, gooddir, wrongdir : string;
    port : word;
 
+function leesparameters(var aInifile : tInifile) : boolean;
 
 
 implementation

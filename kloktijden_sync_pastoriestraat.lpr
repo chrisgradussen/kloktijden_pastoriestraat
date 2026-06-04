@@ -119,7 +119,8 @@ end;
 
 begin
   try
-     if not leesparameters(inifile) then exit;
+   inifile := tinifile.create(paramstr(1));
+  if not leesparameters(inifile) then exit;
   HTTPRouter.registerRoute('/', @route1,true);
   HTTPRouter.registerRoute('/iclock/cdata',TrouteMethod.rmget, @Initialiseer_verbinding);
     HTTPRouter.registerRoute('/iclock/cdata',TrouteMethod.rmPost,@get_timestamps);

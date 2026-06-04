@@ -7,8 +7,9 @@
       <Unit>
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="96"/>
-        <CursorPos X="13" Y="122"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="87"/>
+        <CursorPos X="45" Y="122"/>
         <UsageCount Value="134"/>
         <Loaded Value="True"/>
       </Unit>
@@ -22,10 +23,9 @@
       <Unit>
         <Filename Value="sharedcode.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="4"/>
-        <CursorPos Y="15"/>
+        <CursorPos Y="40"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>

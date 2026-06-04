@@ -8,9 +8,9 @@
         <Filename Value="kloktijden_upload_console.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="135"/>
-        <CursorPos X="65" Y="159"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="235"/>
+        <CursorPos Y="263"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -24,23 +24,13 @@
       <Unit>
         <Filename Value="sharedcode.pas"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="11"/>
+        <TopLine Value="18"/>
+        <CursorPos X="7" Y="51"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="46" TopLine="18"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="49" TopLine="18"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="52" TopLine="18"/>
-      </Position>
       <Position>
         <Filename Value="kloktijden_upload_console.lpr"/>
         <Caret Line="102" TopLine="82"/>
@@ -147,7 +137,19 @@
       </Position>
       <Position>
         <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="159" Column="18" TopLine="135"/>
+        <Caret Line="159" Column="65" TopLine="135"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="22" Column="41"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_upload_console.lpr"/>
+        <Caret Line="273" Column="3" TopLine="246"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_upload_console.lpr"/>
+        <Caret Line="235" Column="30" TopLine="210"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -155,8 +157,8 @@
       <Modes ActiveMode="default">
         <Mode Name="default">
           <local>
-            <CommandLineParams Value="test.ini"/>
-            <LaunchingApplication PathPlusParams="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console&quot;"/>
+            <CommandLineParams Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat/test.ini"/>
+            <LaunchingApplication Use="True" PathPlusParams="usr/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console /home/chrgra/.../test.ini&quot;"/>
             <WorkingDirectory Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat"/>
           </local>
         </Mode>
@@ -166,21 +168,28 @@
       <List Name="WorkingDirectory" Type="File" Count="1">
         <Item1 Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat"/>
       </List>
-      <List Name="LaunchingApplication" Type="File" Count="8">
-        <Item1 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console&quot;"/>
-        <Item2 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console -test.ini&quot;"/>
-        <Item3 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console ./test.ini&quot;"/>
-        <Item4 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console test.ini&quot;"/>
+      <List Name="LaunchingApplication" Type="File" Count="14">
+        <Item1 Value="usr/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console /home/chrgra/.../test.ini&quot;"/>
+        <Item2 Value="/usr/bin/xfce4-terminal  --hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
+        <Item3 Value="--hold --command=&quot;./kloktijden_upload_console %commandline%&quot;
+"/>
+        <Item4 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
         <Item5 Value="/bin/xfce4-terminal --hold --command=&quot;%ExeName% %Params%&quot;"/>
-        <Item6 Value="/bin/xfce4-terminal"/>
-        <Item7 Value="/bin/xfce4-terminal --hold"/>
-        <Item8 Value="xfce4-terminal"/>
+        <Item7 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console test.ini&quot;"/>
+        <Item8 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console&quot;"/>
+        <Item9 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console -test.ini&quot;"/>
+        <Item10 Value="/bin/xfce4-terminal --hold --command=&quot;./kloktijden_upload_console ./test.ini&quot;"/>
+        <Item11 Value="/bin/xfce4-terminal"/>
+        <Item12 Value="/bin/xfce4-terminal --hold"/>
+        <Item13 Value="xfce4-terminal"/>
+        <Item14 Value="--hold --command=&quot;./kloktijden_upload_console %commandline%&quot;"/>
       </List>
-      <List Name="CommandLineParameters" Count="4">
-        <Item1 Value="test.ini"/>
-        <Item2 Value="--hold --command=&quot;%ExeName% %Params%&quot;"/>
-        <Item3 Value="--test.ini"/>
-        <Item4 Value="--hold"/>
+      <List Name="CommandLineParameters" Count="5">
+        <Item1 Value="/home/chrgra/Documenten/GitHub/kloktijden_pastoriestraat/test.ini"/>
+        <Item2 Value="test.ini"/>
+        <Item3 Value="--hold --command=&quot;%ExeName% %Params%&quot;"/>
+        <Item4 Value="--test.ini"/>
+        <Item5 Value="--hold"/>
       </List>
     </HistoryLists>
   </ProjectSession>

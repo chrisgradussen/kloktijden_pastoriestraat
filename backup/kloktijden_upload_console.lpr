@@ -156,12 +156,13 @@ begin
               if comparestr(l.strings[3],'1') = 0 then status := 'stop'
               else
                 raise Exception.Create('status is not 0 or 1 (start or stop)');
-              if not (vestigingsnummer in ['3448', '6418']) then
+              if not (vestigingsnummer = '3448') and not (vestigingsnummer = '6418') then
                 raise Exception.Create('Vestigingsnummer niet in 3448 of 6418');
           {3448 en 6418 }url := 'https://jumbo'+vestigingsnummer+'.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' + date +
                       '&time=' + time + '&status=' + status + '&personnel_number='+ personnel_number;
-{pastoriestraat}url := 'https://jumbo3448.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' + date +
+{pastoriestraat}{url := 'https://jumbo3448.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' + date +
                       '&time=' + time + '&status=' + status + '&personnel_number='+ personnel_number;
+                      }
 {eilandplein}
 {url := 'https://jumbo6418.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' + date +
             '&time=' + time + '&status=' + status + '&personnel_number='+ personnel_number;
@@ -231,6 +232,7 @@ var
 begin
   // quick check parameters
     writeln(datetimetostr(date));
+    writeln(paramstr(0));
     sleep(1000);
  // ErrorMsg:=CheckOptions('h', 'help');
   if not leesparameters(inifile) then begin
@@ -269,6 +271,8 @@ constructor TMyUploadkloktijden.Create(TheOwner: TComponent);
 begin
   inherited Create(TheOwner);
   StopOnException:=True;
+  inifile := tinifile.create(paramstr(1));
+  inifile.updatefile;
 end;
 
 destructor TMyUploadkloktijden.Destroy;
@@ -285,6 +289,7 @@ end;
 var
   Application: TMyUploadkloktijden;
 begin
+
   Application:=TMyUploadkloktijden.Create(nil);
   Application.Title:='Uploadkloktijden Console';
   Application.Run;

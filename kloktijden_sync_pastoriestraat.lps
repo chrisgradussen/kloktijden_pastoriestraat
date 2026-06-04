@@ -8,8 +8,8 @@
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="96"/>
-        <CursorPos X="14" Y="138"/>
+        <TopLine Value="89"/>
+        <CursorPos Y="123"/>
         <UsageCount Value="134"/>
         <Loaded Value="True"/>
       </Unit>
@@ -25,7 +25,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="4"/>
-        <CursorPos Y="15"/>
+        <CursorPos Y="40"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
