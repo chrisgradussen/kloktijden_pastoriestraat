@@ -8,8 +8,8 @@
         <Filename Value="kloktijden_upload_console.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="175"/>
-        <CursorPos X="93" Y="200"/>
+        <TopLine Value="172"/>
+        <CursorPos X="23" Y="208"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
@@ -31,10 +31,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="kloktijden_upload_console.lpr"/>
-        <Caret Line="37" TopLine="26"/>
-      </Position>
       <Position>
         <Filename Value="kloktijden_upload_console.lpr"/>
         <Caret Line="38" TopLine="26"/>
@@ -150,6 +146,10 @@
       <Position>
         <Filename Value="kloktijden_upload_console.lpr"/>
         <Caret Line="200" Column="54" TopLine="175"/>
+      </Position>
+      <Position>
+        <Filename Value="kloktijden_upload_console.lpr"/>
+        <Caret Line="114" Column="13" TopLine="88"/>
       </Position>
     </JumpHistory>
     <RunParams>

@@ -194,10 +194,10 @@ begin
         writeln(E.Message);
         //eventlog1.error(E.Message);
         if renamefile(FileName,WrongDir+'/'+extractfilename(filename)) = false then
-         writeln('Kan file niet verplaatsen naar wrong ' + filename)
+         writeln('Kan file niet verplaatsen naar wrong ' +  WrongDir+'/'+extractfilename(filename))
         //eventlog1.Error('Kan file niet verplaatsen naar wrong ' + filename)
          else
-           writeln('Bestand verplaatst naar wrong' + WrongDir+'/'+extractfilename(filename);
+           writeln('Bestand verplaatst naar wrong' + WrongDir+'/'+extractfilename(filename));
          //eventlog1.Debug('Bestand verplaatst naar wrong'' + filename);
 
       end;

@@ -183,6 +183,7 @@ begin
           l.free;
         end;
       end;
+      CloseFile(txt);
       if renamefile(FileName,GoodDir+'/'+extractfilename(filename)) = false then
         raise Exception.Create('Kan file niet verplaatsen naar good ' + GoodDir+'/'+extractfilename(filename))
       else
@@ -191,10 +192,11 @@ begin
     except
       on E: Exception do
       begin
+        CloseFile(txt);
         writeln(E.Message);
         //eventlog1.error(E.Message);
         if renamefile(FileName,WrongDir+'/'+extractfilename(filename)) = false then
-         writeln('Kan file niet verplaatsen naar wrong ' + filename)
+         writeln('Kan file niet verplaatsen naar wrong ' +  WrongDir+'/'+extractfilename(filename))
         //eventlog1.Error('Kan file niet verplaatsen naar wrong ' + filename)
          else
            writeln('Bestand verplaatst naar wrong' + WrongDir+'/'+extractfilename(filename));
@@ -203,6 +205,7 @@ begin
       end;
       on E: EInOutError do
       begin
+       CloseFile(txt);
        writeln(E.Message);
        //eventlog1.error(E.Message);
        if renamefile(FileName,WrongDir+'/'+extractfilename(filename)) = false then
