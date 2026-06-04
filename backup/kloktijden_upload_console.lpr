@@ -239,7 +239,7 @@ begin
     end;
   finally
     try
-        safelosefile(txt);
+        safeclosefile(txt);
     except
       on E: EInOutError do
       writeln(E.Message);

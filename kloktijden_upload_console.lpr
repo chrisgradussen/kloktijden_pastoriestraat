@@ -27,20 +27,20 @@ type
 
   end;
 
-  procedure SafeCloseFile(var F: TextFile);
+procedure SafeCloseFile(var F: TextFile; const Name: string);
 var
   R: Integer;
-  Name : string;
 begin
   {$I-}
   CloseFile(F);
   R := IOResult;
   {$I+}
-  Name := 'bestandsnaam';
+
   case R of
     0:   Writeln('CloseFile OK: ', Name);
-    5:   Writeln('CloseFile: bestand was al dicht: ', Name);      // EInOutError
-    else Writeln('CloseFile fout ', R, ' voor: ', Name);
+    103: Writeln('CloseFile: bestand was niet open: ', Name); // prima
+  else
+    Writeln('CloseFile fout ', R, ' voor: ', Name);
   end;
 end;
 
@@ -112,6 +112,118 @@ begin
 end;
 
 procedure TMyUploadkloktijden.verstuurbestand(filename : string);
+var
+  txt : TextFile;
+  s, e, url, vestigingsnummer: string;
+  L: TStringList;
+  r: integer;
+  personnel_number, date, time, status: string;
+  FileIsOpen: Boolean;
+begin
+  FileIsOpen := False;
+
+  AssignFile(txt, FileName);
+
+  {$I-}
+  Reset(txt);
+  if IOResult <> 0 then
+    raise Exception.Create('Kan bestand niet openen: ' + FileName);
+  {$I+}
+
+  FileIsOpen := True;
+
+  try
+    // eerste regel lezen
+    ReadLn(txt, s);
+
+    r := Pos(':TRANSACTIONS: SN=0741133800020', s);
+    if r > 0 then
+      vestigingsnummer := '3448'
+    else begin
+      r := Pos(':TRANSACTIONS: SN=0741133800083', s);
+      if r > 0 then
+        vestigingsnummer := '6418'
+      else
+        raise Exception.Create('geen transactbestand ' + filename);
+    end;
+
+    // regels verwerken
+    while not EOF(txt) do
+    begin
+      ReadLn(txt, s);
+      Writeln(s);
+
+      if Length(s) < 8 then
+      begin
+        Writeln('Lege of bijna lege regel');
+        Break;
+      end;
+
+      L := TStringList.Create;
+      try
+        L.Delimiter := #9;
+        L.StrictDelimiter := False;
+        L.DelimitedText := s;
+
+        if L.Count <> 8 then
+          raise Exception.Create('Geen 8 velden in badgedata');
+
+        date := DelChars(L[1], '-');
+        time := L[2];
+        personnel_number := L[0];
+
+        if L[3] = '0' then status := 'start'
+        else if L[3] = '1' then status := 'stop'
+        else raise Exception.Create('status is not 0 or 1');
+
+        url :=
+          'https://jumbo' + vestigingsnummer +
+          '.personeelstool.nl/external/setTimerStatus?username=tenso&password=k6Rp8z1Xk6&date=' +
+          date + '&time=' + time + '&status=' + status +
+          '&personnel_number=' + personnel_number;
+
+        Writeln('url : ' + url);
+
+        if not readresult(FPHTTPClientDownload(url, False)) then
+          raise Exception.Create('PMT server gave error');
+      finally
+        L.Free;
+      end;
+    end;
+
+    // normaal pad → sluiten → naar good
+    SafeCloseFile(txt, FileName);
+    FileIsOpen := False;
+
+    if not RenameFile(FileName, GoodDir + '/' + ExtractFileName(FileName)) then
+      raise Exception.Create('Kan file niet verplaatsen naar good ' +
+                             GoodDir + '/' + ExtractFileName(FileName));
+
+    Writeln('Bestand verplaatst naar good');
+
+  except
+    on E: Exception do
+    begin
+      Writeln(E.Message);
+
+      if FileIsOpen then
+      begin
+        SafeCloseFile(txt, FileName);
+        FileIsOpen := False;
+      end;
+
+      if not RenameFile(FileName, WrongDir + '/' + ExtractFileName(FileName)) then
+        Writeln('Kan file niet verplaatsen naar wrong ' +
+                WrongDir + '/' + ExtractFileName(FileName))
+      else
+        Writeln('Bestand verplaatst naar wrong');
+    end;
+  end;
+end;
+
+
+
+{procedure TMyUploadkloktijden.verstuurbestand(filename : string);
 var
 txt : textfile;
 s,e,url, vestigingsnummer: string;
@@ -247,6 +359,7 @@ begin
     end;
   end;
 end;
+}
 
 procedure TMyUploadkloktijden.DoRun;
 var
