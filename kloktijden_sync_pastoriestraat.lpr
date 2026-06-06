@@ -15,7 +15,7 @@ procedure route1(aReq: TRequest; aResp: TResponse);
 begin
   aResp.content:='<html><body><h1>ERROR 404</h1></body></html>';
   aResp.Code:= 404;
-  writeln(datetimetostr(now) +'Hier moeten we niet komen. ERROR');
+  writeln(StdOut,datetimetostr(now) +'Hier moeten we niet komen. ERROR');
 end;
 
 procedure write_areq(aReq: TRequest);
@@ -56,9 +56,9 @@ begin
   aResp.Connection:= 'close';
   aResp.ContentType:='text/plain';
 
-  writeln(datetimetostr(now) +'initialisatie');
+  writeln(StdOut,datetimetostr(now) +'initialisatie');
   serial := leftstr(areq.QueryString,16);
-  writeln('serial number is : '+serial);
+  writeln(StdOut,'serial number is : '+serial);
 end;
 
 procedure get_timestamps(aReq: TRequest; aResp: TResponse);
@@ -77,11 +77,11 @@ begin
   aResp.Contents.add('POST FROM 0741133800083'); //not important this serialnummer
 
   serial := leftstr(areq.QueryString,16);
-  writeln(datetimetostr(now) +' ontvang timestamps : serial number is : '+serial);
+  writeln(StdOut,datetimetostr(now) +' ontvang timestamps : serial number is : '+serial);
   s := 'TRANS'+formatdatetime('YYYYMMDDhhnnsszzz',now)+'.txt'   ;
 
   s := writedir +'/' + s;
-  writeln('Filename is ' +s);
+  writeln(StdOut,'Filename is ' +s);
 
   assignfile(txt,s);
   try
@@ -97,7 +97,7 @@ begin
   else
   begin
     z := copy(areq.querystring,p+6,length(areq.querystring)-(p+5));
-    writeln('Last stamp is ' +z);
+    writeln(StdOut,'Last stamp is ' +z);
     stamp := strtoint(z);
     inifile.WriteInteger('MAIN','stamp',stamp);
     inifile.updatefile;
@@ -113,7 +113,7 @@ begin
   aResp.ContentType:='text/plain';
   aResp.Content := ('OK');
   serial := leftstr(areq.QueryString,16);
-  writeln(datetimetostr(now) +' status : serial number is : '+serial);
+  writeln(StdOut,datetimetostr(now) +' status : serial number is : '+serial);
 end;
 
 
