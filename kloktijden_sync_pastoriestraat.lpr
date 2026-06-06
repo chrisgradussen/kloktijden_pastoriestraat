@@ -130,6 +130,8 @@ begin
   Application.Title:='iclock sync';
   Application.Port:=port;
   writeln(datetimetostr(now) +' server started');
+  WriteLn(StdOut,datetimetostr(now) +' server started');
+  Flush(StdOut);
   Application.Initialize;
   Application.Run;
   finally
