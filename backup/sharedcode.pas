@@ -19,7 +19,7 @@ implementation
 
 
 
-function leesparameters(aInifile : tInifile) : boolean;
+function leesparameters(var aInifile : tInifile) : boolean;
 var
   txt : file of text;
   tempfile : string;
@@ -47,7 +47,6 @@ begin
   end;
   try
     try
-      ainifile := tinifile.create(paramstr(1));
       ainifile.CacheUpdates := false;
       ainifile.updatefile;
       writedir := ainifile.ReadString('MAIN','writedir','<pathtowritedir>');

@@ -7,9 +7,8 @@
       <Unit>
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="89"/>
-        <CursorPos X="57" Y="133"/>
+        <TopLine Value="90"/>
+        <CursorPos X="13" Y="96"/>
         <UsageCount Value="134"/>
         <Loaded Value="True"/>
       </Unit>
@@ -23,106 +22,15 @@
       <Unit>
         <Filename Value="sharedcode.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="4"/>
-        <CursorPos Y="40"/>
+        <TopLine Value="65"/>
+        <CursorPos X="28" Y="107"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="112" Column="12" TopLine="101"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="61" Column="14" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="7" Column="70"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="61" Column="18" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="7" Column="61"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="61" Column="36" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="85" Column="42" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="120" Column="46" TopLine="104"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="12" Column="11" TopLine="3"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="114" Column="33" TopLine="52"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="208" Column="21" TopLine="191"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="13" Column="18"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="218" Column="39" TopLine="201"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="110" Column="11" TopLine="93"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="7" Column="77"/>
-      </Position>
-      <Position>
-        <Filename Value="sharedcode.pas"/>
-        <Caret Line="13" Column="21"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Column="32"/>
-      </Position>
-      <Position>
-        <Filename Value="sharedcode.pas"/>
-        <Caret Line="104" Column="20" TopLine="62"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="119" TopLine="97"/>
-      </Position>
-      <Position>
-        <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
-        <Caret Line="7" Column="72"/>
-      </Position>
-      <Position>
-        <Filename Value="sharedcode.pas"/>
-        <Caret Line="8" Column="29"/>
-      </Position>
-      <Position>
-        <Filename Value="sharedcode.pas"/>
-        <Caret Line="12" Column="27"/>
-      </Position>
-      <Position>
-        <Filename Value="sharedcode.pas"/>
-        <Caret Line="108" Column="18" TopLine="66"/>
-      </Position>
+    <JumpHistory HistoryIndex="28">
       <Position>
         <Filename Value="sharedcode.pas"/>
         <Caret Line="14" Column="4"/>
@@ -150,6 +58,94 @@
       <Position>
         <Filename Value="kloktijden_sync_pastoriestraat.lpr"/>
         <Caret Line="134" Column="3" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="32" Column="28" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="30" Column="21" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="35" Column="21" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="36" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="37" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="38" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="39" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="40" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="41" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="42" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="43" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="44" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="45" Column="22" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="59" Column="25" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="61" Column="53" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="71" Column="25" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="73" Column="53" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="83" Column="25" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="85" Column="53" TopLine="43"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="92" Column="27" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="95" Column="25" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="sharedcode.pas"/>
+        <Caret Line="101" Column="25" TopLine="59"/>
       </Position>
     </JumpHistory>
     <RunParams>
